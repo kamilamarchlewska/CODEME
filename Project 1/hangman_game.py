@@ -1,8 +1,5 @@
-
-
 import json
 import random
-
 
 def hangman(text):
     secret = text
@@ -18,7 +15,6 @@ def hangman(text):
     while life > 0:
         print(f'You have {life} trial.')
         print(' '.join(characters))
-
 
         print(f'Given letters | {lista} |')
         letter = input('Enter the letter:')
@@ -46,8 +42,6 @@ def hangman(text):
                                 print('Victory!')
                                 break
 
-
-
                     if letter == secret:
                         print('Victory!')
                         break
@@ -67,16 +61,13 @@ def choice_category():
         flowerChoice = random.choice(data['1. FLOWERS'])
         hangman(flowerChoice)
 
-
     elif int(category) == 2:
         fruitChoice = random.choice(data['2. FRUITS'])
         hangman(fruitChoice)
 
-
     elif int(category) == 3:
         vegetableChoice = random.choice(data['3. VEGETABLES'])
         hangman(vegetableChoice)
-
 
     elif int(category) == 4:
         animalChoice = random.choice(data['4. ANIMALS'])
@@ -94,7 +85,6 @@ def header_hangman():
 
     print('.' * width)
     print('')
-
 
 filename = 'hangman.json'
 with open(filename, 'r') as f:
