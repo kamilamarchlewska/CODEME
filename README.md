@@ -12,3 +12,4 @@ hackathon projects
 ## Technologies
 Project is created with:
 * Python version: 3.7
+* JSON
